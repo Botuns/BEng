@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Request</title>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row h-100 align-items-center justify-content-center" style="border-radius: 5px;min-height: 100vh" >
+            <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+                <div class="bg-light rounded p-4 p-sm-5 my-4 mx-3" style="border-radius: 8px">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <a href="index.html" class="">
+                            <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>BOTUNS</h3>
+                        </a>
+                        <h3 style="font-size: smaller">Lets gets you started !</h3>
+                    </div>
+     
+    <form class="container-fluid" enctype="multipart/form-data" method="post" id="analysis-form" >
+        <div>
+            <label>Choose the proposed Building Type you want</label>
+        <select id="bty" class="container-fluid" name="buildingType">
+            <option value="1">Duplex</option>
+            <option value="2">Bungalow</option>
+            <option value="3">Detached</option>
+            
+        </select>
+    </div>
+    <div>
+        <label>Choose the proposed BedRoom Size you want</label>
+    <select id="bds" class="container-fluid" name="buildingBedroomSpecification">
+        <option value="1">1 BedRooms</option>
+        <option value="2">2 BedRooms</option>
+        <option value="3">3 BedRooms</option>
+        <option value="4">4 BedRooms</option>
+        <option value="5">5 BedRooms</option>
+        
+    </select>
+    </div>
+    <div>
+        <label>Choose the proposed Athestic Value you want</label>
+    <select id="ath" class="container-fluid" name="buildingAthesticValue">
+        <option value="1">FirstClass</option>
+        <option value="2">Classical</option>
+        <option value="3">Econmical</option>
+        
+
+        
+    </select>
+</div>
+<div>
+    <label>Choose the proposed Duration Type you want</label>
+<select id="dur" class="container-fluid" name="buildingDuration">
+    <option value="2">Fast</option>
+    <option value="2">Normal</option>
+    <option value="3">Slow</option>
+    
+</select>
+</div>
+<button id="btn" type="submit" onclick="fetchAnalysis()" class="btn btn-primary rounded-pill m-2">Submit</button>
+    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="getAnalysis.js"></script>
+
+</html>
+
+        

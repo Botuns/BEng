@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+<body>
+<table style="width: 100vh;">
+<div>
+<div>
+<div class="col-sm-12 col-xl-6" style="width: 100vh;">
+    <button class="btn btn-primary rounded-pill m-2" id="date" onclick="displayContracts()">See  All Contracts</button>
+<div class="table table-bordered">
+    <h6 class="mb-4">Contracts Table</h6>
+    <table class="table" id="data" style="background-color: orange;"> 
+        <thead>
+            <tr style="font-weight: bold;-webkit-text-fill-color: black; text-decoration: black;">
+                <th>S/N</th>
+                <th>ContractInitiatedDate</th>
+                <th>HireType</th>
+                <th>ProjectProgress</th>
+                <th>ContractDuration</th>
+                <th>ServiceType</th>
+                <th>ClientMessage</th>
+                <th>Status</th>
+
+                
+            </tr>
+          </thead>
+          <tbody id= "table-data" style="font-weight: bold;-webkit-text-fill-color: black; text-decoration: black;">
+            
+          </tbody>
+    </table>
+    <a href="admindash.html">
+    <button  class="btn btn-primary rounded-pill m-2" id="date" onclick="Dashbard()">Back to DashBoard</button>
+</a>
+</div>
+</body>
+<script src="AllDContract.js"></script>
+<script>
+  function Dashbard (){
+      window.location.assign("admindash.html")
+      
+  }
+  let Contracts = () => {
+      window.location.assign("InitiateContract.html")
+      
+  }
+  
+</script>
+</html>

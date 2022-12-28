@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="assets/vendors/select2/select2.min.css">
+    <link rel="stylesheet" href="assets/vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Contract Form</h4>
+          <p class="card-description"> Update this contract ! </p>
+          <form class="forms-sample" method="post" enctype="multipart/form-data" id="form">
+            <div class="form-group row">
+              <label for="exampleInputUsername2" class="col-sm-3 col-form-label">ContractDuration </label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="exampleInputUsername2"  name="ContractDuration">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="exampleInputUsername2" class="col-sm-3 col-form-label">ContractDescription </label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="exampleInputUsername3"  name="ContractDescription">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="exampleInputEmail2" class="col-sm-3 col-form-label">ContractPrice </label>
+              <div class="col-sm-9">
+                <input type="number" class="form-control" id="exampleInputEmail2" name="ContractPrice ">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="exampleInputMobile" class="col-sm-3 col-form-label">ContractStatus </label>
+              <div class="col-sm-9">
+                <select id="status" class="container-fluid" name="ContractStatus">
+                    <option value="1">Initiated </option>
+                    <option value="2">Bidded</option>
+                    <option value="3">Bidded</option>
+                    <option value="4">IsWorkable</option>
+                    <option value="5">Agreed,</option>
+                    <option value="6">OnGoing,</option>
+                    <option value="7">Delivered</option>
+                </select>              
+                </div>
+            </div>
+            <div class="form-group row">
+              <label for="exampleInputPassword2" class="col-sm-3 col-form-label">ProjectProgress </label>
+              <div class="col-sm-9">
+                <input type="number" class="form-control"  id="exampleInputPassword2"  name="ProjectProgress">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label">ContractDocument </label>
+              <div class="col-sm-9">
+                <input type="file" class="form-control" id="exampleInputConfirmPassword2" name="ContractDocument">
+              </div>
+            </div>
+            <div class="form-check form-check-flat form-check-primary">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input"> Remember me </label>
+            </div>
+            <button type="submit" class="btn btn-primary mr-2" onclick="SubmitData()">Submit</button>
+            <a><button class="btn btn-light">Cancel</button>
+          </form>
+        </div>
+      </div>
+    </div>
+</body>
+<script src="UpdateContract.js"></script></html>

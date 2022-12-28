@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Request</title>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row h-100 align-items-center justify-content-center" style="border-radius: 5px;min-height: 100vh" >
+            <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+                <div class="bg-light rounded p-4 p-sm-5 my-4 mx-3" style="border-radius: 8px">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <a href="index.html" class="">
+                            <h3 class="text-primary"><i class="fa fa-hashtag me-2"></i>BOTUNS</h3>
+                        </a>
+                        <h3 style="font-size: smaller">Lets gets you started !</h3>
+                    </div>
+     
+    <form class="container-fluid" action="post" id="contract-form">
+        <div>
+            <label>Choose the proposed Hire Type you want</label>
+        <select id="hire" class="container-fluid" name="HireType">
+            <option value="1">BuildingContractor</option>
+            <option value="2">CivilEngineer</option>
+            <option value="3">Builder</option>
+            <option value="4">Bricklayer</option>
+            <option value="5">Architect</option>
+            <option value="6">Surveyor</option>
+            <option value="7">SandSuplier</option>
+            <option value="8">BuildingCapenter</option>
+        </select>
+    </div>
+    <div>
+        <label>Choose the proposed Service Type you want</label>
+    <select id="service" class="container-fluid">
+        <option value="1">BuildingContracts</option>
+        <option value="2">ArchitecturalSolutions</option>
+        <option value="3">LandSurveyServices</option>
+        <option value="4">BuildingCapentry</option>
+        <option value="5">CivilEngineeringContracts</option>
+        <option value="6">BrickLaying</option>
+        <option value="7">SandSupply</option>
+        <option value="8">BuilderServices</option>
+    </select>
+    <div class="form-floating mb-3">
+        <input  name="ContractDuration" type="text" class="form-control" id="Duration" placeholder="jhondoe">
+        <label for="floatingText">Proposed Duration</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input name="ClientMessage" type="text" class="form-control" id="message" placeholder="jhondoe">
+        <label for="floatingText">Additional Message</label>
+    </div>
+</div>
+<button id="btn" type="submit" onclick="Submit()" class="btn btn-primary rounded-pill m-2">Submit</button>
+    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="CreateContract.js"></script>
+
+</html>
+
+        
